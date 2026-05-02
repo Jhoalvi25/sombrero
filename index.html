@@ -4,28 +4,45 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- SEO dinámico — se actualiza con JS -->
-  <title>Sombrero — Comprime, convierte y optimiza archivos offline</title>
-  <meta name="description" content="Sombrero es una aplicación de escritorio para Windows que comprime, convierte, optimiza y repara archivos completamente offline. Tus archivos nunca salen de tu computador."/>
-  <meta name="keywords" content="compresión archivos, convertir PDF, optimizar imágenes, offline, Windows, aplicación escritorio, Sombrero"/>
-  <meta name="robots" content="index, follow"/>
-  <meta name="author" content="Sombrero App"/>
+  <!-- SEO -->
+  <title>Sombrero — Offline file compressor, converter and optimizer for Windows</title>
+  <meta name="description" content="Windows desktop utility for offline file compression, format conversion, optimization and repair. 100% local processing, no cloud, no telemetry. Free download."/>
+  <meta name="keywords" content="offline file compressor, local file optimizer, Windows file utility, offline PDF compressor, local file converter, privacy-first file tool, desktop file management Windows, Sombrero"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+  <meta name="author" content="Sombrero"/>
   <link rel="canonical" href="https://sombrero.app/"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://sombrero.app/"/>
-  <meta property="og:title" content="Sombrero — Comprime, convierte y optimiza archivos offline"/>
-  <meta property="og:description" content="Arrastra. Elige. Listo. La papelera inteligente para tus archivos."/>
+  <meta property="og:title" content="Sombrero — Offline file utility for Windows"/>
+  <meta property="og:description" content="Compress, convert, optimize and repair files locally on Windows. No cloud, no uploads, full privacy. Free desktop utility."/>
   <meta property="og:image" content="https://sombrero.app/og-image.png"/>
-  <meta property="og:locale" content="es_CO"/>
-  <meta property="og:locale:alternate" content="en_US"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:locale:alternate" content="es_CO"/>
+  <meta property="og:site_name" content="Sombrero"/>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Sombrero — Comprime, convierte y optimiza archivos offline"/>
-  <meta name="twitter:description" content="Arrastra. Elige. Listo."/>
+  <meta name="twitter:title" content="Sombrero — Offline file utility for Windows"/>
+  <meta name="twitter:description" content="Process files locally on Windows. Compression, conversion, optimization and repair. 100% offline."/>
   <meta name="twitter:image" content="https://sombrero.app/og-image.png"/>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sombrero",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "UtilitiesApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "description": "Offline file compressor, converter, optimizer and repair tool for Windows. 100% local processing.",
+    "downloadUrl": "https://github.com/Jhoalvi25/sombrero/releases",
+    "softwareVersion": "1.1.0",
+    "features": "Offline file compression, Format conversion, Image and PDF optimization, PDF repair, Local processing only"
+  }
+  </script>
 
   <!-- Favicon SVG inline -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎩</text></svg>"/>
@@ -804,20 +821,20 @@
   <div class="stars-canvas" id="stars"></div>
 
   <!-- NAV -->
-  <nav role="navigation" aria-label="Main navigation">
-    <a href="#" class="nav-brand" aria-label="Sombrero home">🎩 Sombrero</a>
-    <ul class="nav-links">
-      <li><a href="#features"  data-i18n="nav_features">Características</a></li>
-      <li><a href="#how"       data-i18n="nav_how">Cómo funciona</a></li>
-      <li><a href="#privacy"   data-i18n="nav_privacy">Privacidad</a></li>
-      <li><a href="#download"  data-i18n="nav_download">Descargar</a></li>
-      <li><a href="#contact"   data-i18n="nav_contact">Contacto</a></li>
-    </ul>
-    <div class="lang-switcher" role="group" aria-label="Language selector">
-      <button class="lang-btn active" data-lang="es" onclick="setLang('es')">ES</button>
-      <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
-    </div>
-  </nav>
+    <nav role="navigation" aria-label="Main navigation">
+      <a href="#" class="nav-brand" aria-label="Sombrero — Windows desktop utility">🎩 Sombrero</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#features"  data-i18n="nav_features" aria-label="Features">Características</a></li>
+        <li><a href="#how"       data-i18n="nav_how" aria-label="How it works">Cómo funciona</a></li>
+        <li><a href="#privacy"   data-i18n="nav_privacy" aria-label="Privacy">Privacidad</a></li>
+        <li><a href="#download"  data-i18n="nav_download" aria-label="Download">Descargar</a></li>
+        <li><a href="#contact"   data-i18n="nav_contact" aria-label="Contact">Contacto</a></li>
+      </ul>
+      <div class="lang-switcher" role="group" aria-label="Seleccionar idioma / Select language">
+        <button class="lang-btn active" data-lang="es" onclick="setLang('es')" aria-label="Español">ES</button>
+        <button class="lang-btn"        data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+      </div>
+    </nav>
 
   <main>
 
@@ -827,19 +844,19 @@
       <div class="container">
         <div class="hero-inner">
           <div class="hero-content">
-            <p class="hero-eyebrow" data-i18n="hero_eyebrow">App de escritorio para Windows</p>
+            <p class="hero-eyebrow" data-i18n="hero_eyebrow">Utilidad de escritorio para Windows</p>
             <span class="hero-hat" aria-hidden="true">🎩</span>
             <h1 id="hero-title">
               Sombrero<br/>
-              <span data-i18n="hero_h1_line2">para tus archivos</span>
+              <span data-i18n="hero_h1_line2">gestión local de archivos</span>
             </h1>
             <p class="hero-tagline" data-i18n="hero_tagline">
-              Comprime, convierte, optimiza y repara archivos completamente offline. Arrastra un archivo, elige una acción, y listo.
+              Comprime, convierte, optimiza y repara archivos directamente en tu PC. Procesamiento 100% local, sin subidas a la nube.
             </p>
             <div class="btn-group">
               <a href="#download" class="btn-primary">
                 <span>⬇</span>
-                <span data-i18n="hero_cta_install">Descargar instalador</span>
+                <span data-i18n="hero_cta_install">Descargar para Windows</span>
               </a>
               <a href="#how" class="btn-secondary">
                 <span data-i18n="hero_cta_how">Cómo funciona →</span>
@@ -848,11 +865,11 @@
             <div class="hero-meta">
               <div class="hero-meta-item">
                 <span class="hero-meta-val">100%</span>
-                <span class="hero-meta-label" data-i18n="hero_meta_offline">Offline</span>
+                <span class="hero-meta-label" data-i18n="hero_meta_offline">100% local</span>
               </div>
               <div class="hero-meta-item">
-                <span class="hero-meta-val">v1.1</span>
-                <span class="hero-meta-label" data-i18n="hero_meta_version">Versión</span>
+                <span class="hero-meta-val">v1.1.0</span>
+                <span class="hero-meta-label" data-i18n="hero_meta_version">v1.1.0</span>
               </div>
               <div class="hero-meta-item">
                 <span class="hero-meta-val">0 $</span>
@@ -873,10 +890,11 @@
                 <div class="app-nav-tab act">🎩 Sombrero</div>
                 <div class="app-nav-tab">📜</div>
                 <div class="app-nav-tab">✨</div>
+                <div class="app-nav-tab">🧹</div>
                 <div class="app-nav-tab">⚙️</div>
               </div>
-              <div class="app-drop-zone">
-                <svg class="app-hat-svg" width="80" height="80" viewBox="0 0 100 100">
+              <div class="app-drop-zone" aria-label="File drop zone">
+                <svg class="app-hat-svg" width="80" height="80" viewBox="0 0 100 100" aria-hidden="true">
                   <ellipse cx="50" cy="80" rx="36" ry="6" fill="rgba(139,92,246,0.15)"/>
                   <ellipse cx="50" cy="74" rx="36" ry="7.5" fill="#1e1b4b"/>
                   <ellipse cx="50" cy="74" rx="36" ry="7.5" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.7"/>
@@ -891,9 +909,9 @@
                 <p class="app-drop-text" data-i18n="mockup_drop">Arrastra un archivo aquí</p>
                 <p class="app-drop-sub" data-i18n="mockup_sub">o haz clic para seleccionar</p>
               </div>
-              <div class="app-folders">
+              <div class="app-folders" aria-label="Output folders">
                 <div class="app-folder-row"><span>⚡</span><code style="color:#c4b5fd;font-size:8px">Comprimidos/</code></div>
-                <div class="app-folder-row"><span>🔄</span><code style="color:#fcd34d;font-size:8px">Convertidos/</code></div>
+                <div class="app-folder-row"><span>🔄</span><code style="color:#fcd34d;font-size:8px">Versiones ligeras/</code></div>
                 <div class="app-folder-row"><span>✨</span><code style="color:#6ee7b7;font-size:8px">Optimizados/</code></div>
               </div>
             </div>
@@ -906,54 +924,54 @@
     <section id="features" aria-labelledby="features-title">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-eyebrow" data-i18n="feat_eyebrow">Todo en un sombrero</p>
-          <h2 id="features-title" data-i18n="feat_title">¿Qué puede hacer Sombrero?</h2>
+          <p class="section-eyebrow" data-i18n="feat_eyebrow">Herramientas integradas</p>
+          <h2 id="features-title" data-i18n="feat_title">Qué hace Sombrero</h2>
           <p class="section-lead" data-i18n="feat_lead">
-            Cuatro herramientas en una, sin instalar nada más, sin internet.
+            Utilidad de escritorio para compresión, conversión, optimización y reparación de archivos en Windows.
           </p>
         </div>
         <div class="features-grid">
 
           <article class="feature-card reveal" style="--c: #c4b5fd">
-            <div class="feature-icon" style="background:rgba(139,92,246,0.12)">⚡</div>
-            <h3 data-i18n="feat1_title">Compresión inteligente</h3>
-            <p data-i18n="feat1_desc">ZIP, 7Z, TAR.GZ, BZ2. El sistema elige el algoritmo óptimo según el tipo de archivo. Texto y código se comprimen hasta un 80%.</p>
-            <span class="feature-tag" style="background:rgba(139,92,246,0.12);color:#c4b5fd">ZIP · 7Z · TAR.GZ</span>
+            <div class="feature-icon" style="background:rgba(139,92,246,0.12)" aria-hidden="true">⚡</div>
+            <h3 data-i18n="feat1_title">Compresión local</h3>
+            <p data-i18n="feat1_desc">ZIP, 7Z, TAR.GZ, BZ2. El sistema selecciona el algoritmo según el tipo de archivo. Texto y código: hasta 80% menor tamaño.</p>
+            <span class="feature-tag" style="background:rgba(139,92,246,0.12);color:#c4b5fd">ZIP · TAR.GZ</span>
           </article>
 
           <article class="feature-card reveal" style="--c: #fcd34d">
-            <div class="feature-icon" style="background:rgba(245,158,11,0.12)">🔄</div>
+            <div class="feature-icon" style="background:rgba(245,158,11,0.12)" aria-hidden="true">🔄</div>
             <h3 data-i18n="feat2_title">Conversión de formatos</h3>
-            <p data-i18n="feat2_desc">Word ↔ PDF, Excel → PDF, PowerPoint → PDF, PNG ↔ JPG. Más de 10 conversiones disponibles sin servicios en la nube.</p>
+            <p data-i18n="feat2_desc">Word ↔ PDF, Excel → PDF, PowerPoint → PDF, PNG ↔ JPG. Más de 10 conversiones sin servicios en la nube.</p>
             <span class="feature-tag" style="background:rgba(245,158,11,0.12);color:#fcd34d">DOCX · XLSX · PPTX · PDF</span>
           </article>
 
           <article class="feature-card reveal" style="--c: #6ee7b7">
-            <div class="feature-icon" style="background:rgba(16,185,129,0.12)">✨</div>
+            <div class="feature-icon" style="background:rgba(16,185,129,0.12)" aria-hidden="true">✨</div>
             <h3 data-i18n="feat3_title">Optimización sin pérdida</h3>
-            <p data-i18n="feat3_desc">Reduce el peso de imágenes PNG, JPG y archivos PDF manteniendo la calidad visual. Ahorra espacio de forma transparente.</p>
+            <p data-i18n="feat3_desc">Reduce el peso de imágenes PNG, JPG y archivos PDF manteniendo la calidad visual. Ahorra espacio real en disco.</p>
             <span class="feature-tag" style="background:rgba(16,185,129,0.12);color:#6ee7b7">PNG · JPG · PDF</span>
           </article>
 
           <article class="feature-card reveal" style="--c: #fca5a5">
-            <div class="feature-icon" style="background:rgba(239,68,68,0.12)">🔧</div>
+            <div class="feature-icon" style="background:rgba(239,68,68,0.12)" aria-hidden="true">🔧</div>
             <h3 data-i18n="feat4_title">Reparación de PDF</h3>
-            <p data-i18n="feat4_desc">Detecta PDFs dañados e intenta recuperarlos mediante tres estrategias: re-serialización, extracción de páginas y reconstrucción desde texto.</p>
+            <p data-i18n="feat4_desc">Detecta PDFs dañados e intenta recuperarlos mediante re-serialización, extracción de páginas y reconstrucción desde texto.</p>
             <span class="feature-tag" style="background:rgba(239,68,68,0.12);color:#fca5a5">PDF</span>
           </article>
 
           <article class="feature-card reveal" style="--c: #93c5fd">
-            <div class="feature-icon" style="background:rgba(59,130,246,0.12)">📜</div>
-            <h3 data-i18n="feat5_title">Historial completo</h3>
-            <p data-i18n="feat5_desc">Cada archivo procesado queda registrado. Restaura cualquier archivo a su ubicación original con un solo clic, en cualquier momento.</p>
-            <span class="feature-tag" style="background:rgba(59,130,246,0.12);color:#93c5fd" data-i18n="feat5_tag">Restaurar siempre</span>
+            <div class="feature-icon" style="background:rgba(59,130,246,0.12)" aria-hidden="true">📜</div>
+            <h3 data-i18n="feat5_title">Historial y restauración</h3>
+            <p data-i18n="feat5_desc">Cada archivo procesado queda registrado. Restaura cualquier versión a su ubicación original con un clic.</p>
+            <span class="feature-tag" style="background:rgba(59,130,246,0.12);color:#93c5fd" data-i18n="feat5_tag">Restauración opcional</span>
           </article>
 
           <article class="feature-card reveal" style="--c: var(--gold)">
-            <div class="feature-icon" style="background:rgba(251,191,36,0.12)">📁</div>
-            <h3 data-i18n="feat6_title">Carpetas organizadas</h3>
-            <p data-i18n="feat6_desc">Los archivos se guardan en Documentos/Sombrero/ con subcarpetas por tipo: Comprimidos, Convertidos, Optimizados, Reparados, Originales.</p>
-            <span class="feature-tag" style="background:rgba(251,191,36,0.12);color:var(--gold)" data-i18n="feat6_tag">Auto-organizado</span>
+            <div class="feature-icon" style="background:rgba(251,191,36,0.12)" aria-hidden="true">📁</div>
+            <h3 data-i18n="feat6_title">Almacenamiento controlado</h3>
+            <p data-i18n="feat6_desc">Elige conservar o reemplazar los originales. Sombrero puede eliminar automáticamente los archivos originales y liberar espacio real en disco.</p>
+            <span class="feature-tag" style="background:rgba(251,191,36,0.12);color:var(--gold)" data-i18n="feat6_tag">Control total</span>
           </article>
 
         </div>
@@ -964,32 +982,32 @@
     <section id="how" aria-labelledby="how-title">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-eyebrow" data-i18n="how_eyebrow">Simple por diseño</p>
-          <h2 id="how-title" data-i18n="how_title">Tres pasos. Nada más.</h2>
+          <p class="section-eyebrow" data-i18n="how_eyebrow">Diseño minimalista</p>
+          <h2 id="how-title" data-i18n="how_title">Tres pasos</h2>
           <p class="section-lead" data-i18n="how_lead">
-            La complejidad técnica desaparece. Solo arrastra, elige y recibe el resultado.
+            Procesa archivos locales sin complicaciones. Sin configuraciones complejas.
           </p>
         </div>
         <div class="steps">
           <div class="step reveal">
-            <div class="step-num">📂</div>
+            <div class="step-num" aria-label="File">📂</div>
             <div>
-              <h3 data-i18n="step1_title">Arrastra el archivo</h3>
-              <p data-i18n="step1_desc">Suelta cualquier archivo sobre el sombrero o selecciónalo desde el explorador. Sombrero detecta el tipo automáticamente.</p>
+              <h3 data-i18n="step1_title">Selecciona archivo</h3>
+              <p data-i18n="step1_desc">Arrastra cualquier archivo sobre la ventana o selecciónalo desde el explorador. Sombrero detecta el tipo automáticamente.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step-num" style="border-color:rgba(245,158,11,0.4);background:rgba(245,158,11,0.08);box-shadow:0 0 20px rgba(245,158,11,0.15)">⚡</div>
+            <div class="step-num" style="border-color:rgba(245,158,11,0.4);background:rgba(245,158,11,0.08);box-shadow:0 0 20px rgba(245,158,11,0.15)" aria-label="Action">⚡</div>
             <div>
               <h3 data-i18n="step2_title">Elige la acción</h3>
-              <p data-i18n="step2_desc">Un menú visual muestra las acciones disponibles para ese tipo de archivo: comprimir, convertir, optimizar o reparar.</p>
+              <p data-i18n="step2_desc">Menú contextual con acciones disponibles para ese tipo de archivo: comprimir, convertir, optimizar o reparar.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step-num" style="border-color:rgba(134,239,172,0.4);background:rgba(134,239,172,0.08);box-shadow:0 0 20px rgba(134,239,172,0.15)">🐇</div>
+            <div class="step-num" style="border-color:rgba(134,239,172,0.4);background:rgba(134,239,172,0.08);box-shadow:0 0 20px rgba(134,239,172,0.15)" aria-label="Done">✓</div>
             <div>
-              <h3 data-i18n="step3_title">¡Listo!</h3>
-              <p data-i18n="step3_desc">El conejo confirma el resultado. El archivo procesado aparece en tu carpeta Documentos/Sombrero/ y en el historial.</p>
+              <h3 data-i18n="step3_title">Procesado completo</h3>
+              <p data-i18n="step3_desc">El archivo procesado se guarda localmente. Accede al historial y controla si conservar o eliminar los originales.</p>
             </div>
           </div>
         </div>
@@ -1002,16 +1020,16 @@
         <div class="privacy-card reveal">
           <div>
             <span class="privacy-icon" aria-hidden="true">🔒</span>
-            <h2 id="privacy-title" data-i18n="priv_title">Tu computador.<br/>Tus archivos.</h2>
+            <h2 id="privacy-title" data-i18n="priv_title">Procesamiento 100% local.<br/>Tus archivos no salen de tu PC.</h2>
             <p style="color:var(--text-muted);font-weight:300;margin-top:12px;font-size:0.95rem" data-i18n="priv_sub">
-              Sombrero no necesita internet. Nunca.
+              Utilidad de escritorio sin conexión. Privacidad total por diseño.
             </p>
           </div>
           <div class="privacy-points">
             <div class="privacy-point">
               <div class="privacy-point-dot"></div>
               <p class="privacy-point-text" data-i18n="priv_p1">
-                <strong>Procesamiento 100% local.</strong> Ningún archivo sale de tu computador.
+                <strong>Procesamiento 100% local.</strong> Ningún archivo se sube a servidores externos.
               </p>
             </div>
             <div class="privacy-point">
@@ -1023,13 +1041,19 @@
             <div class="privacy-point">
               <div class="privacy-point-dot"></div>
               <p class="privacy-point-text" data-i18n="priv_p3">
-                <strong>Sin cuenta ni registro.</strong> Descarga y usa. Sin formularios.
+                <strong>Sin cuenta ni registro.</strong> Descarga y usa inmediatamente.
               </p>
             </div>
             <div class="privacy-point">
               <div class="privacy-point-dot"></div>
               <p class="privacy-point-text" data-i18n="priv_p4">
-                <strong>Sin actualizaciones automáticas.</strong> Actualiza cuando tú decidas.
+                <strong>Sin actualizaciones automáticas.</strong> Control total sobre las versiones instaladas.
+              </p>
+            </div>
+            <div class="privacy-point">
+              <div class="privacy-point-dot" style="background:var(--yellow)"></div>
+              <p class="privacy-point-text" data-i18n="priv_p5">
+                <strong>Ideal para documentos sensibles.</strong> Archivos confidenciales nunca abandonan tu equipo.
               </p>
             </div>
           </div>
@@ -1043,19 +1067,19 @@
         <div class="download-box reveal">
           <p class="section-eyebrow" data-i18n="dl_eyebrow">Windows 10 / 11 · x64</p>
           <h2 id="download-title" data-i18n="dl_title">Descarga Sombrero</h2>
-          <p class="section-lead" data-i18n="dl_lead">Disponible en dos versiones. Ambas son gratuitas.</p>
+          <p class="section-lead" data-i18n="dl_lead">Utilidad de escritorio gratuita. Dos opciones de instalación.</p>
           <div class="download-cards">
             <a href="https://github.com/Jhoalvi25/sombrero/releases/download/v1.1.0/Sombrero.Setup.1.1.0.exe" class="download-card" aria-label="Descargar instalador NSIS" onclick="analytics.track('download_exe')">
                <span class="download-card-icon">📦</span>
                <span class="download-card-name" data-i18n="dl_installer_name">Instalador</span>
                <span class="download-card-desc" data-i18n="dl_installer_desc">Instalación guiada.<br/>Acceso directo en escritorio.</span>
-               <span class="download-card-badge">NSIS · ~91,5 MB</span>
+               <span class="download-card-badge">NSIS · ~91.3 MB</span>
              </a>
              <a href="https://github.com/Jhoalvi25/sombrero/releases/download/v1.1.0/Sombrero.1.1.0.exe" class="download-card" aria-label="Descargar versión portable" onclick="analytics.track('download_portable')">
                <span class="download-card-icon">💾</span>
                <span class="download-card-name" data-i18n="dl_portable_name">Portable</span>
                <span class="download-card-desc" data-i18n="dl_portable_desc">Sin instalación.<br/>Ejecuta desde cualquier carpeta.</span>
-               <span class="download-card-badge">EXE · ~91,2 MB</span>
+               <span class="download-card-badge">EXE · ~91.1 MB</span>
              </a>
           </div>
           <p class="version-note" data-i18n="dl_version">v1.1.0 · Electron 28 · Node.js 18</p>
@@ -1068,7 +1092,7 @@
        <div class="container">
          <div class="reveal" style="text-align:center">
            <p id="donation-title" data-i18n="donation_text" style="color:var(--text-muted);font-size:0.95rem;margin-bottom:16px;font-weight:300"></p>
-           <a href="https://buymeacoffee.com/sombrero" target="_blank" rel="noopener noreferrer" class="btn-secondary" onclick="analytics.track('donation_click')" data-i18n="donation_btn">Apoya el proyecto</a>
+           <a href="https://ko-fi.com/sombrerosoporte" target="_blank" rel="noopener noreferrer" class="btn-secondary" onclick="analytics.track('donation_click')" data-i18n="donation_btn">Apoya el proyecto</a>
          </div>
        </div>
      </section>
@@ -1079,9 +1103,9 @@
         <div class="contact-grid">
           <div class="contact-info">
             <p class="section-eyebrow" data-i18n="contact_eyebrow">¿Tienes alguna pregunta?</p>
-            <h2 id="contact-title" data-i18n="contact_title">Escríbenos</h2>
+            <h2 id="contact-title" data-i18n="contact_title">Contacto</h2>
             <p data-i18n="contact_desc">
-              ¿Encontraste un bug? ¿Tienes una sugerencia? ¿Quieres reportar un archivo que no se procesa bien? Estamos aquí.
+              ¿Encontraste un error? ¿Tienes una sugerencia? ¿Problemas con algún formato? Estamos aquí.
             </p>
             <div class="contact-detail">
               <span>📧</span>
@@ -1127,21 +1151,21 @@
   </main>
 
   <!-- FOOTER -->
-  <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-inner">
-        <span class="footer-brand">🎩 Sombrero</span>
-        <div class="footer-meta">
-          <span data-i18n="footer_made">Hecho con ✨ para Windows</span><br/>
-          <span style="font-size:0.72rem" data-i18n="footer_offline">100% offline · sin telemetría · sin nube</span>
-        </div>
-        <div class="footer-right">
-          <span data-i18n="footer_version">v1.1.0</span><br/>
-          <span id="footer-year"></span>
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-brand">🎩 Sombrero</span>
+          <div class="footer-meta">
+            <span data-i18n="footer_made">Utilidad de escritorio para Windows</span><br/>
+            <span style="font-size:0.72rem" data-i18n="footer_offline">100% local · sin telemetría · sin nube</span>
+          </div>
+          <div class="footer-right">
+            <span data-i18n="footer_version">v1.1.0</span><br/>
+            <span id="footer-year"></span>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 <script>
   // ── Analytics ────────────────────────────────────────────────────
@@ -1156,8 +1180,8 @@
     }
   };
 
-// ── i18n ────────────────────────────────────────────────────────
-const T = {
+  // ── i18n ────────────────────────────────────────────────────────
+ const T = {
     es: {
       // Nav
       nav_features: 'Características',
@@ -1166,57 +1190,57 @@ const T = {
       nav_download: 'Descargar',
       nav_contact:  'Contacto',
       // Hero
-      hero_eyebrow:    'App de escritorio para Windows',
-      hero_h1_line2:   'para tus archivos',
-      hero_tagline:    'Comprime, convierte, optimiza y repara archivos completamente offline. Arrastra un archivo, elige una acción, y listo.',
-      hero_cta_install:'Descargar instalador',
+      hero_eyebrow:    'Utilidad de escritorio para Windows',
+      hero_h1_line2:   'gestión local de archivos',
+      hero_tagline:    'Comprime, convierte, optimiza y repara archivos directamente en tu PC. Procesamiento 100% local, sin subidas a la nube, sin pérdida de privacidad.',
+      hero_cta_install:'Descargar para Windows',
       hero_cta_how:    'Cómo funciona →',
-      hero_meta_offline:'Offline',
-      hero_meta_version:'Versión',
+      hero_meta_offline:'100% local',
+      hero_meta_version:'v1.1.0',
       hero_meta_price:  'Gratis',
       // Mockup
       mockup_drop: 'Arrastra un archivo aquí',
       mockup_sub:  'o haz clic para seleccionar',
       // Features
-      feat_eyebrow: 'Todo en un sombrero',
-      feat_title:   '¿Qué puede hacer Sombrero?',
-      feat_lead:    'Cuatro herramientas en una, sin instalar nada más, sin internet.',
-      feat1_title: 'Compresión inteligente',
-      feat1_desc:  'ZIP, 7Z, TAR.GZ, BZ2. El sistema elige el algoritmo óptimo. Texto y código se comprimen hasta un 80%.',
+      feat_eyebrow: 'Herramientas integradas',
+      feat_title:   'Qué hace Sombrero',
+      feat_lead:    'Utilidad de escritorio para compresión, conversión, optimización y reparación de archivos en Windows.',
+      feat1_title: 'Compresión local',
+      feat1_desc:  'ZIP, 7Z, TAR.GZ, BZ2. El sistema selecciona el algoritmo según el tipo de archivo. Texto y código: hasta 80% menor tamaño.',
       feat2_title: 'Conversión de formatos',
-      feat2_desc:  'Word ↔ PDF, Excel → PDF, PowerPoint → PDF, PNG ↔ JPG. Más de 10 conversiones sin nube.',
+      feat2_desc:  'Word ↔ PDF, Excel → PDF, PowerPoint → PDF, PNG ↔ JPG. Más de 10 conversiones sin servicios en la nube.',
       feat3_title: 'Optimización sin pérdida',
-      feat3_desc:  'Reduce el peso de imágenes PNG, JPG y PDFs manteniendo la calidad visual.',
+      feat3_desc:  'Reduce el peso de imágenes PNG, JPG y archivos PDF manteniendo la calidad visual. Ahorra espacio real en disco.',
       feat4_title: 'Reparación de PDF',
-      feat4_desc:  'Detecta PDFs dañados e intenta recuperarlos con tres estrategias progresivas.',
-      feat5_title: 'Historial completo',
-      feat5_desc:  'Restaura cualquier archivo a su ubicación original con un solo clic.',
-      feat5_tag:   'Restaurar siempre',
-      feat6_title: 'Carpetas organizadas',
-      feat6_desc:  'Los archivos se guardan en Documentos/Sombrero/ con subcarpetas por tipo.',
-      feat6_tag:   'Auto-organizado',
+      feat4_desc:  'Detecta PDFs dañados e intenta recuperarlos mediante re-serialización, extracción de páginas y reconstrucción desde texto.',
+      feat5_title: 'Historial y restauración',
+      feat5_desc:  'Cada archivo procesado queda registrado. Restaura cualquier versión a su ubicación original con un clic.',
+      feat5_tag:   'Restauración opcional',
+      feat6_title: 'Almacenamiento controlado',
+      feat6_desc:  'Elige conservar o reemplazar los originales. Sombrero puede eliminar automáticamente los archivos originales y liberar espacio real en disco.',
+      feat6_tag:   'Control total',
       // How
-      how_eyebrow: 'Simple por diseño',
-      how_title:   'Tres pasos. Nada más.',
-      how_lead:    'La complejidad técnica desaparece. Solo arrastra, elige y recibe el resultado.',
-      step1_title: 'Arrastra el archivo',
-      step1_desc:  'Suelta cualquier archivo sobre el sombrero. Sombrero detecta el tipo automáticamente.',
+      how_eyebrow: 'Diseño minimalista',
+      how_title:   'Tres pasos',
+      how_lead:    'Procesa archivos locales sin complicaciones. Sin configuraciones complejas.',
+      step1_title: 'Selecciona archivo',
+      step1_desc:  'Arrastra cualquier archivo sobre la ventana o selecciónalo desde el explorador. Sombrero detecta el tipo automáticamente.',
       step2_title: 'Elige la acción',
-      step2_desc:  'Un menú visual muestra las acciones disponibles: comprimir, convertir, optimizar o reparar.',
-      step3_title: '¡Listo!',
-      step3_desc:  'El conejo confirma el resultado. El archivo aparece en Documentos/Sombrero/ y en el historial.',
+      step2_desc:  'Menú contextual con acciones disponibles para ese tipo de archivo: comprimir, convertir, optimizar o reparar.',
+      step3_title: 'Procesado completo',
+      step3_desc:  'El archivo procesado se guarda localmente. Accede al historial y controla si conservar o eliminar los originales.',
       // Privacy
-      priv_title: 'Tu computador.<br/>Tus archivos.',
-      priv_sub:   'Sombrero no necesita internet. Nunca.',
-      priv_p1: '<strong>Procesamiento 100% local.</strong> Ningún archivo sale de tu computador.',
+      priv_title: 'Procesamiento 100% local.<br/>Tus archivos no salen de tu PC.',
+      priv_sub:   'Utilidad de escritorio sin conexión. Privacidad total por diseño.',
+      priv_p1: '<strong>Procesamiento 100% local.</strong> Ningún archivo se sube a servidores externos.',
       priv_p2: '<strong>Sin telemetría.</strong> No se recopila ni envía ningún dato de uso.',
-      priv_p3: '<strong>Sin cuenta ni registro.</strong> Descarga y usa. Sin formularios.',
-      priv_p4: '<strong>Sin actualizaciones automáticas.</strong> Actualiza cuando tú decidas.',
-      priv_p5: '<strong>Código verificable.</strong> Transparencia total sobre el comportamiento.',
+      priv_p3: '<strong>Sin cuenta ni registro.</strong> Descarga y usa inmediatamente.',
+      priv_p4: '<strong>Sin actualizaciones automáticas.</strong> Control total sobre las versiones instaladas.',
+      priv_p5: '<strong>Ideal para documentos sensibles.</strong> Archivos confidenciales nunca abandonan tu equipo.',
       // Download
       dl_eyebrow: 'Windows 10 / 11 · x64',
       dl_title:   'Descarga Sombrero',
-      dl_lead:    'Disponible en dos versiones. Ambas son gratuitas.',
+      dl_lead:    'Utilidad de escritorio gratuita. Dos opciones de instalación.',
       dl_installer_name: 'Instalador',
       dl_installer_desc: 'Instalación guiada.<br/>Acceso directo en escritorio.',
       dl_portable_name:  'Portable',
@@ -1224,8 +1248,8 @@ const T = {
       dl_version: 'v1.1.0 · Electron 28 · Node.js 18',
       // Contact
       contact_eyebrow:  '¿Tienes alguna pregunta?',
-      contact_title:    'Escríbenos',
-      contact_desc:     '¿Bug? ¿Sugerencia? ¿Archivo que no procesa bien? Estamos aquí.',
+      contact_title:    'Contacto',
+      contact_desc:     '¿Encontraste un error? ¿Tienes una sugerencia? ¿Problemas con algún formato? Estamos aquí.',
       contact_platform: 'Windows 10 / 11 solamente',
       // Form
       form_name:       'Nombre',
@@ -1237,8 +1261,8 @@ const T = {
       form_submit:     'Enviar mensaje',
       form_success_msg:'¡Mensaje enviado! Te responderemos pronto.',
       // Footer
-      footer_made:    'Hecho con ✨ para Windows',
-      footer_offline: '100% offline · sin telemetría · sin nube',
+      footer_made:    'Utilidad de escritorio para Windows',
+      footer_offline: '100% local · sin telemetría · sin nube',
       footer_version: 'v1.1.0',
       // Donation
       donation_text: 'Si Sombrero te ha sido útil, puedes apoyar su desarrollo 🎩',
@@ -1251,60 +1275,60 @@ const T = {
       nav_privacy:  'Privacy',
       nav_download: 'Download',
       nav_contact:  'Contact',
-      hero_eyebrow:    'Desktop app for Windows',
-      hero_h1_line2:   'for your files',
-      hero_tagline:    'Compress, convert, optimize and repair files completely offline. Drop a file, choose an action, done.',
-      hero_cta_install:'Download installer',
+      hero_eyebrow:    'Windows desktop utility',
+      hero_h1_line2:   'local file management',
+      hero_tagline:    'Compress, convert, optimize and repair files directly on your PC. 100% local processing, no uploads, no cloud, no privacy trade-offs.',
+      hero_cta_install:'Download for Windows',
       hero_cta_how:    'How it works →',
-      hero_meta_offline:'Offline',
-      hero_meta_version:'Version',
+      hero_meta_offline:'100% local',
+      hero_meta_version:'v1.1.0',
       hero_meta_price:  'Free',
       mockup_drop: 'Drop a file here',
       mockup_sub:  'or click to browse',
-      feat_eyebrow: 'All in one hat',
-      feat_title:   'What can Sombrero do?',
-      feat_lead:    'Four tools in one, without installing anything else, without internet.',
-      feat1_title: 'Smart compression',
-      feat1_desc:  'ZIP, 7Z, TAR.GZ, BZ2. The system picks the optimal algorithm. Text and code compress up to 80%.',
+      feat_eyebrow: 'Integrated tools',
+      feat_title:   'What Sombrero does',
+      feat_lead:    'Desktop utility for file compression, conversion, optimization and repair on Windows.',
+      feat1_title: 'Local compression',
+      feat1_desc:  'ZIP, 7Z, TAR.GZ, BZ2. The system selects the optimal algorithm per file type. Text and code: up to 80% size reduction.',
       feat2_title: 'Format conversion',
-      feat2_desc:  'Word ↔ PDF, Excel → PDF, PowerPoint → PDF, PNG ↔ JPG. 10+ conversions without the cloud.',
+      feat2_desc:  'Word ↔ PDF, Excel → PDF, PowerPoint → PDF, PNG ↔ JPG. 10+ conversions with zero cloud dependencies.',
       feat3_title: 'Lossless optimization',
-      feat3_desc:  'Reduce the size of PNG, JPG, and PDF files while maintaining visual quality.',
+      feat3_desc:  'Reduce PNG, JPG and PDF file sizes while maintaining visual quality. Real disk space savings.',
       feat4_title: 'PDF repair',
-      feat4_desc:  'Detects damaged PDFs and attempts recovery through three progressive strategies.',
-      feat5_title: 'Full history',
-      feat5_desc:  'Restore any file to its original location with a single click, anytime.',
-      feat5_tag:   'Always restorable',
-      feat6_title: 'Organized folders',
-      feat6_desc:  'Files are saved in Documents/Sombrero/ with subfolders by type.',
-      feat6_tag:   'Auto-organized',
-      how_eyebrow: 'Simple by design',
-      how_title:   'Three steps. Nothing more.',
-      how_lead:    'The technical complexity disappears. Just drop, choose and get the result.',
-      step1_title: 'Drop the file',
-      step1_desc:  'Drop any file onto the hat. Sombrero detects the type automatically.',
-      step2_title: 'Choose the action',
-      step2_desc:  'A visual menu shows available actions: compress, convert, optimize, or repair.',
-      step3_title: 'Done!',
-      step3_desc:  'The rabbit confirms the result. The file appears in Documents/Sombrero/ and in history.',
-      priv_title: 'Your computer.<br/>Your files.',
-      priv_sub:   'Sombrero does not need the internet. Ever.',
-      priv_p1: '<strong>100% local processing.</strong> No file ever leaves your computer.',
-      priv_p2: '<strong>No telemetry.</strong> No usage data is collected or sent.',
-      priv_p3: '<strong>No account needed.</strong> Download and use. No sign-up.',
-      priv_p4: '<strong>No automatic updates.</strong> Update when you decide.',
-      priv_p5: '<strong>Verifiable code.</strong> Full transparency about system behavior.',
+      feat4_desc:  'Detects corrupted PDFs and attempts recovery via re-serialization, page extraction and text reconstruction.',
+      feat5_title: 'History & restore',
+      feat5_desc:  'Every processed file is logged. Restore any version to its original location with one click.',
+      feat5_tag:   'Optional restore',
+      feat6_title: 'Controlled storage',
+      feat6_desc:  'Choose to keep or replace originals. Sombrero can auto-delete originals to free up real disk space.',
+      feat6_tag:   'Full control',
+      how_eyebrow: 'Minimalist design',
+      how_title:   'Three steps',
+      how_lead:    'Process local files without hassle. No complex configuration required.',
+      step1_title: 'Select file',
+      step1_desc:  'Drop any file onto the window or select it from the explorer. Sombrero detects the type automatically.',
+      step2_title: 'Choose action',
+      step2_desc:  'Context menu shows available actions for that file type: compress, convert, optimize or repair.',
+      step3_title: 'Processing complete',
+      step3_desc:  'The processed file is saved locally. Access history and control whether to keep or delete originals.',
+      priv_title: '100% local processing.<br/>Your files never leave your PC.',
+      priv_sub:   'Offline desktop utility. Privacy by design.',
+      priv_p1: '<strong>100% local processing.</strong> No files are uploaded to external servers.',
+      priv_p2: '<strong>No telemetry.</strong> No usage data is collected or transmitted.',
+      priv_p3: '<strong>No account required.</strong> Download and use immediately.',
+      priv_p4: '<strong>No forced updates.</strong> You control which versions are installed.',
+      priv_p5: '<strong>Built for sensitive documents.</strong> Confidential files never leave your machine.',
       dl_eyebrow: 'Windows 10 / 11 · x64',
       dl_title:   'Download Sombrero',
-      dl_lead:    'Available in two versions. Both are free.',
+      dl_lead:    'Free Windows desktop utility. Two installation options.',
       dl_installer_name: 'Installer',
       dl_installer_desc: 'Guided installation.<br/>Desktop shortcut included.',
       dl_portable_name:  'Portable',
       dl_portable_desc:  'No installation needed.<br/>Run from any folder.',
       dl_version: 'v1.1.0 · Electron 28 · Node.js 18',
       contact_eyebrow:  'Have a question?',
-      contact_title:    'Get in touch',
-      contact_desc:     'Found a bug? Have a suggestion? File not processing correctly? We are here.',
+      contact_title:    'Contact',
+      contact_desc:     'Found a bug? Have a suggestion? File format issues? We are here.',
       contact_platform: 'Windows 10 / 11 only',
       form_name:       'Name',
       form_name_ph:    'Your name',
@@ -1314,10 +1338,9 @@ const T = {
       form_message_ph: 'Tell us how we can help...',
       form_submit:     'Send message',
       form_success_msg:'Message sent! We will get back to you soon.',
-      footer_made:    'Made with ✨ for Windows',
-      footer_offline: '100% offline · no telemetry · no cloud',
+      footer_made:    'Windows desktop utility',
+      footer_offline: '100% local · no telemetry · no cloud',
       footer_version: 'v1.1.0',
-      // Donation
       donation_text: 'If Sombrero has helped you, you can support its development 🎩',
       donation_btn:  'Support the project',
     }
@@ -1332,20 +1355,27 @@ const T = {
 
   function setLang(lang) {
     currentLang = lang
-    // Update html lang
+    const t = T[lang]
+
+    // Update html lang and dir
     document.documentElement.lang = lang
+    document.documentElement.dir = 'ltr'
 
     // Update meta tags
-    const t = T[lang]
-    document.title = lang === 'es'
-      ? 'Sombrero — Comprime, convierte y optimiza archivos offline'
-      : 'Sombrero — Compress, convert and optimize files locally'
-    document.querySelector('meta[name="description"]').content = lang === 'es'
-      ? 'Sombrero es una aplicación de escritorio para Windows que comprime, convierte, optimiza y repara archivos completamente offline.'
-      : 'Sombrero is a Windows desktop app that compresses, converts, optimizes and repairs files completely offline.'
-    document.querySelector('meta[property="og:title"]').content   = document.title
+    if (lang === 'es') {
+      document.title = 'Sombrero — Utilidad de escritorio para gestionar archivos en Windows'
+      document.querySelector('meta[name="description"]').content = 'Utilidad de escritorio para Windows. Comprime, convierte, optimiza y repara archivos con procesamiento 100% local. Sin nube, sin telemetría. Gratis.'
+      document.querySelector('meta[name="keywords"]').content = 'compresor archivos offline, optimizador local Windows, utilidad escritorio Windows, compresor PDF offline, conversor archivos local, herramienta privacidad archivos'
+    } else {
+      document.title = 'Sombrero — Offline file utility for Windows'
+      document.querySelector('meta[name="description"]').content = 'Windows desktop utility for offline file compression, format conversion, optimization and repair. 100% local processing, no cloud, no telemetry. Free download.'
+      document.querySelector('meta[name="keywords"]').content = 'offline file compressor, local file optimizer, Windows file utility, offline PDF compressor, local file converter, privacy-first file tool, desktop file management Windows'
+    }
+    document.querySelector('meta[property="og:title"]').content = document.title
     document.querySelector('meta[property="og:description"]').content = document.querySelector('meta[name="description"]').content
     document.querySelector('meta[property="og:locale"]').content = lang === 'es' ? 'es_CO' : 'en_US'
+    document.querySelector('meta[name="twitter:title"]').content = document.title
+    document.querySelector('meta[name="twitter:description"]').content = document.querySelector('meta[name="description"]').content
 
     // Update all data-i18n elements
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -1412,16 +1442,17 @@ const T = {
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el))
   }
 
-  // ── Form ──────────────────────────────────────────────────────────
-   async function handleSubmit(e) {
+   // ── Form ──────────────────────────────────────────────────────────
+    async function handleSubmit(e) {
       e.preventDefault()
       analytics.track('contact_form_submit')
       const form = e.target
       const formData = new FormData(form)
       const success = document.getElementById('formSuccess')
       const submitBtn = form.querySelector('button[type="submit"]')
+      const originalText = submitBtn.textContent
       submitBtn.disabled = true
-      submitBtn.textContent = 'Enviando...'
+      submitBtn.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...'
       try {
         const response = await fetch(form.action, {
           method: 'POST',
@@ -1432,14 +1463,14 @@ const T = {
           form.style.display = 'none'
           success.style.display = 'block'
         } else {
-          alert('Error al enviar. Intenta nuevamente.')
+          alert(currentLang === 'es' ? 'Error al enviar. Intenta nuevamente.' : 'Error sending. Please try again.')
           submitBtn.disabled = false
-          submitBtn.textContent = 'Enviar mensaje'
+          submitBtn.textContent = originalText
         }
       } catch (error) {
-        alert('Error de conexión. Intenta nuevamente.')
+        alert(currentLang === 'es' ? 'Error de conexión. Intenta nuevamente.' : 'Connection error. Please try again.')
         submitBtn.disabled = false
-        submitBtn.textContent = 'Enviar mensaje'
+        submitBtn.textContent = originalText
       }
     }
 
